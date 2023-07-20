@@ -1,0 +1,59 @@
+<div class="main__load">
+  <div class="main__container--left">
+    <img
+      class="main__image"
+      src="../../assets/image/icon/userAccount.png"
+      alt="userAccount"
+    />
+    <button class="main__button">Загрузить фото</button>
+  </div>
+  <form
+    class="main__form--right"
+    (submit)="redactMain(password.value, login.value, email.value, phone.value)"
+  >
+    <input
+      class="input main__input"
+      placeholder="Имя пользователя"
+      value="{{ activeUser.login }}"
+      #login
+    />
+    <input
+      class="main__input"
+      placeholder="Телефон"
+      value="{{ activeUser.phoneNumber }}"
+      #phone
+    />
+    <input
+      class="main__input"
+      placeholder="Пароль"
+      value="{{ activeUser.password }}"
+      #password
+    />
+    <input
+      class="main__input"
+      placeholder="E-mail"
+      value="{{ activeUser.email }}"
+      #email
+    />
+    <button class="main__button" type="submit">Сохранить изменения</button>
+  </form>
+  <form class="main__load_data">
+    <h2>Данные для автозаполнения</h2>
+    <input
+      class="main__input"
+      placeholder="Способ оплаты"
+      value="{{ activeUser.payState }}"
+    />
+    <input
+      class="main__input"
+      placeholder="Багаж"
+      value="{{ activeUser.bagage }}"
+    />
+    <input
+      class="main__input"
+      placeholder="Тариф"
+      value="{{ activeUser.traffic }}"
+    />
+    <button class="main__button">Сохранить изменения</button>
+  </form>
+</div>

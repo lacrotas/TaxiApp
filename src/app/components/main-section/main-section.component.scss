@@ -1,0 +1,116 @@
+.main__order{
+    position: relative;
+    width: 100%;
+    height: 880px;
+    overflow: hidden;
+    .main__map{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .main__form{
+        position: relative;
+        z-index: 10;
+        float: right;
+        background-color: rgba(145, 180, 199,0.7 );
+        width: 470px;
+        height: 400px;
+        margin: 80px 30px 0 0;
+        border-radius: 9px;
+        transition: all ease 1s;
+        @media (max-width: 800px){
+            float: left;
+            top: 390px;
+            width: 100%;
+        }
+        .main__button--disable{
+            display: none;
+            width: 50px;
+            @media (max-width: 800px){
+                display: block;
+                position: absolute;
+                margin-left: calc( 50% - 25px );
+                top: -30px;
+            }
+        }
+        .main__checkbox{
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 20px; 
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 130px; 
+                height: 130px;
+                background-color:#fff;
+                border-radius: 15px;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    background-color:#eee;
+                }
+                &:active{
+                    background-color: #ccc;
+                }
+            }
+            .main__comfort{
+                    background-image: url("../../assets/image/icon/car2.png");
+                    background-repeat: no-repeat;
+                    background-position-x: 12px;
+                    background-position-y: -15px;
+                    p{
+                        font-size: 20px;
+                        &:first-child{
+                            margin-top: 60px;
+                        }
+                    }
+            } 
+                         
+            .main__econom{
+                    background-image: url("../../assets/image/icon/car1.png");
+                    background-repeat: no-repeat;
+                    background-position-x: 12px;
+                    background-position-y: -15px;
+                    p{
+                        font-size: 20px;
+                        &:first-child{
+                            margin-top: 60px;
+                        }
+                    }
+            }              
+            .main__lux{
+                    background-image: url("../../assets/image/icon/car3.png");
+                    background-repeat: no-repeat;
+                    background-position-x: 12px;
+                    background-position-y: -15px;
+                    p{
+                        font-size: 20px;
+                        &:first-child{
+                            margin-top: 60px;
+                        }
+                    }
+            } 
+        }     
+        .main__input, .main__button{
+            box-sizing: border-box;
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 20px; 
+            height: 54px;
+            &:first-child{
+                margin-top: 30px;
+            }
+        }
+    } 
+    .main__anchor{
+        border-radius: 9px; 
+        position: relative;
+        top: 30px;
+        left: calc(50% - 87px);
+        font-size: 20px;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        background-color:  rgba(145, 180, 199,0.7 );
+    }
+}

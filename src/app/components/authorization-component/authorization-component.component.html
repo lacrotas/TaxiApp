@@ -1,0 +1,32 @@
+<div class="modal-window">
+  <form
+    class="modal-window__authorization"
+  >
+    <h2 class="modal-window__label">Авторизация</h2>
+    <input
+      class="input modal-window__input---name"
+      name="login"
+      type="text"
+      placeholder="Почта"
+      #login
+    />
+    <input
+      class="input modal-window__input--password"
+      type="password"
+      placeholder="Пароль"
+      #password
+    />
+    <button class="button modal-window__button--login" type="button" (click)="logUser(login.value, password.value)">
+      Вход
+    </button>
+    <a class="modal-window__paragraph">Забыли пароль?</a>
+    <button
+      class="button modal-window__button--registration"
+      type="button"
+      routerLink="/registration"
+    >
+      Регистрация
+    </button>
+  </form>
+  <!-- <h2>{{ user.id }}</h2> -->
+</div>

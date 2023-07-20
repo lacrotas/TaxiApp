@@ -1,0 +1,33 @@
+<div class="changeGet">
+   <button class="getUser" (click)="changecheckKategory(1)">Пользователи</button>
+   <button class="getState" (click)="changecheckKategory(2)">Заявления</button>
+</div>
+<div class="allUsers" *ngIf="checkKategory==1">
+    <table class="allusers_table">
+      <div class="table_elemet" *ngFor = "let user of users">
+        <p class="user_login elemet_info">Логин: {{user.login}}</p>
+        <p class="user_password elemet_info">Пароль: {{user.password}}</p>
+        <p class="user_role elemet_info">Роль: {{user.userRole}}</p>
+        <p class="user_email elemet_info">Почта: {{user.email}}</p>
+        <p class="user_phone elemet_info">Телефон:  {{user.phone}}</p>
+        <div class="elemet_buttons">
+           <img src="../../../assets/icons/delete.png" alt="" class="elemet_delete elemet_image" (click)="deleteUser(user)">
+        </div>
+      </div>
+    </table>
+</div>
+<div class="allStatements" *ngIf="checkKategory==2">
+  <table class="allusers_table">
+    <div class="table_elemet" *ngFor = "let state of states">
+      <p class="user_login elemet_info">Логин: {{state.login}}</p>
+      <p class="user_password elemet_info">Марка: {{state.automark}}</p>
+      <p class="user_role elemet_info">Цвет: {{state.color}}</p>
+      <p class="user_email elemet_info">Номер: {{state.number}}</p>
+      <p class="user_phone elemet_info">Телефон:  {{state.phone}}</p>
+      <div class="elemet_buttons">
+         <img src="../../../assets/icons/acses.png" alt="" class="elemet_update elemet_image" (click)="acceptDriver(state)">
+         <img src="../../../assets/icons/delete.png" alt="" class="elemet_delete elemet_image" (click)="deleteState(state)">
+      </div>
+    </div>
+  </table>
+</div>

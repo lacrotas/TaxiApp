@@ -1,0 +1,44 @@
+<div class="modal-window">
+  <form
+    class="modal-window__registration"
+  >
+    <h2 class="modal-window__label">Регистрация</h2>
+    <input
+      class="input modal-window__input---name"
+      id="userName"
+      type="text"
+      placeholder="Логин"
+      #login
+    />
+    <input
+      class="input modal-window__input--password"
+      id="userPass"
+      type="password"
+      placeholder="Пароль"
+      #password
+    />
+    <input
+      class="input modal-window__input--password"
+      type="password"
+      placeholder="Повторите пароль"
+      #repassword
+    />
+    <input
+    class="input modal-window__input---name"
+    id="userEmail"
+    type="text"
+    placeholder="Почта"
+    #email
+    />
+    <button class="button modal-window__button--registration" type="button" (click)="registrate(login.value, password.value, repassword.value, email.value)">
+      Зарегистрироваться
+    </button>
+    <button
+      class="button modal-window__button--login"
+      type="button"
+      routerLink="/authorizatoin"
+    >
+      Войти
+    </button>
+  </form>
+</div>

@@ -1,0 +1,33 @@
+<section class="work">
+    <div class="work-header">
+      <h2><a name="work"></a>Работа</h2>
+    </div>
+    <div class="work-content">
+      <div class="work-content-adventuries">
+        <h2>Наши преимущества</h2>
+        <div>
+          <img src="../../../assets/image/icon/time.png" />
+          <h3>Гибкий график работы</h3>
+        </div>
+        <div>
+          <img src="../../../assets/image/icon/docs.png" />
+          <h3>Работа без контракта</h3>
+        </div>
+        <div>
+          <img src="../../../assets/image/icon/money.png" />
+          <h3>Ежедневная оплата</h3>
+        </div>
+      </div>
+      <div class="work-content-form">
+        <h2>Оставьте ваше заявление</h2>
+        <form>
+          <input class="work-content__input--name" id="driver-name" type="text" #login placeholder="ФИО..." />
+          <input class="work-content__input--number" id="driver-number" type="number" #phone placeholder="Номер телефона..." />
+          <input class="work-content__input--car" id="driver-car" type="text" #autoMark placeholder="Марка авто" />
+          <input class="work-content__input--car" id="driver-car" type="text" #color placeholder="Цвет" />
+          <input class="work-content__input--car" id="driver-car" type="text" #number placeholder="Номер" />
+          <button (click)="addState(login.value, autoMark.value, color.value, number.value, phone.value)">Подать заявление</button>
+        </form>
+      </div>
+    </div>
+</section>

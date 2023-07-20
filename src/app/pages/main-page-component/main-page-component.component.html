@@ -1,0 +1,8 @@
+<div>
+  <app-main-section *ngIf="userRole==0"></app-main-section>
+  <app-traffic-section *ngIf="userRole==0"></app-traffic-section>
+  <app-work-section *ngIf="userRole==0"></app-work-section>
+  <app-review-section *ngIf="userRole==0"></app-review-section>
+  <app-contact-section *ngIf="userRole==0"></app-contact-section>
+  <app-all-user-viev *ngIf="userRole==2"></app-all-user-viev>
+</div>

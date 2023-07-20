@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #95C8E3;
+}
+input{
+    border-radius: 10px;
+    border: 2px solid #000000;
+    &:hover{
+       border: 2px solid #00639A;
+    }
+    &:focus{
+        border: 2px solid #48758E;
+    }
+}
+ button{
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #000000;
+    &:hover{
+        background-color: #EEEEEE;
+     }
+     &:focus{
+        background-color: #CCCCCC;
+     }
+}
+.table{
+    width: 100%;
+    border-spacing: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;  
+    table{
+        width: 100%;
+        box-sizing: border-box;
+        tr{
+            th{
+                padding: 10px 20px;
+                background: #48758E;
+                color: #fff;
+                font-size: 0.9em;
+            }
+            td {
+                vertical-align: middle;
+                padding: 10px;
+                font-size: 14px;
+                text-align: center;
+                border-bottom: 2px solid #56433D;
+                border-right: 2px solid #56433D;
+                }
+        }
+    }
+}
+.content{
+    position: relative;
+    top: 70px;
+    min-height: calc(100vh - 70px);
+}

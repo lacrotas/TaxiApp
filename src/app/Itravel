@@ -1,0 +1,9 @@
+import { Data } from "@angular/router";
+
+export interface Travel{
+    id?:number;
+    cost: number;
+    data: Data;
+    
+}
+  
